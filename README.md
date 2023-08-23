@@ -6,7 +6,7 @@ small enough to fit on one floppy disk:
 ```bash
 $ docker images | grep hell
 REPOSITORY               TAG       IMAGE ID        CREATED          VIRTUAL SIZE
-crccheck/hello-world     latest    2b28c6ad8d1b    4 months ago     1.2MB
+openziti/hello-world     latest    2b28c6ad8d1b    4 months ago     1.2MB
 ```
 
 I made this initially because there were lots of scenarios where I wanted a
@@ -22,7 +22,7 @@ this better for everyone over the years.
 ### Starting a web server on port 80
 
 ```bash
-$ docker run -d --rm --name web-test -p 80:8000 crccheck/hello-world
+$ docker run -d --rm --name web-test -p 80:8000 openziti/hello-world
 ```
 
 You can now interact with this as if it were a dumb web server:
