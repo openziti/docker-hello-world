@@ -15,7 +15,7 @@ jobs:
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         # https://github.com/docker/metadata-action
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: openziti/hello-world
           tags: |
